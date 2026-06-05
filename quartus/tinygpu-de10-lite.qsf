@@ -71,8 +71,8 @@ set_global_assignment -name SYSTEMVERILOG_FILE ../src/dcr.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/core.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/alu.sv
-set_global_assignment -name QIP_FILE vga_pll.qip
-set_global_assignment -name QIP_FILE framebuffer_ram.qip
+set_global_assignment -name SYSTEMVERILOG_FILE vga_pll.sv
+set_global_assignment -name SYSTEMVERILOG_FILE framebuffer_ram.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ../src/top.sv
 set_global_assignment -name SYSTEMVERILOG_FILE vga_controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mock_rpi_generator.sv
