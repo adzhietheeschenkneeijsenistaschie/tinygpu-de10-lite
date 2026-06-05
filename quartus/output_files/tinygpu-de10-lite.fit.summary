@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Jun  4 19:19:47 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : tinygpu-de10-lite
+Top-level Entity Name : top
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 249 / 49,760 ( < 1 % )
+    Total combinational functions : 248 / 49,760 ( < 1 % )
+    Dedicated logic registers : 78 / 49,760 ( < 1 % )
+Total registers : 78
+Total pins : 15 / 360 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 524,288 / 1,677,312 ( 31 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

@@ -1,0 +1,8 @@
+
+State Machine - |top|init_state
+Name init_state.011 init_state.010 init_state.001 init_state.000 init_state.100 
+init_state.000 0 0 0 0 0 
+init_state.001 0 0 1 1 0 
+init_state.010 0 1 0 1 0 
+init_state.011 1 0 0 1 0 
+init_state.100 0 0 0 1 1 

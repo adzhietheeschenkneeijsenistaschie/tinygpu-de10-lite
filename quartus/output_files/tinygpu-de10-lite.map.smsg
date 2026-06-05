@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at scheduler.sv(55): always construct contains both blocking and non-blocking assignments File: C:/Users/Ajitesh/Documents/tinygpu-de10-lite/src/scheduler.sv Line: 55
+Info (10281): Verilog HDL Declaration information at scheduler.sv(39): object "done" differs only in case from object "DONE" in the same scope File: C:/Users/Ajitesh/Documents/tinygpu-de10-lite/src/scheduler.sv Line: 39
+Warning (10268): Verilog HDL information at dispatch.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/Ajitesh/Documents/tinygpu-de10-lite/src/dispatch.sv Line: 38
+Warning (10268): Verilog HDL information at controller.sv(55): always construct contains both blocking and non-blocking assignments File: C:/Users/Ajitesh/Documents/tinygpu-de10-lite/src/controller.sv Line: 55

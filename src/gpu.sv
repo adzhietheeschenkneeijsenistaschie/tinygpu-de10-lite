@@ -130,7 +130,8 @@ module gpu #(
         .mem_read_valid(program_mem_read_valid),
         .mem_read_address(program_mem_read_address),
         .mem_read_ready(program_mem_read_ready),
-        .mem_read_data(program_mem_read_data),
+        .mem_read_data(program_mem_read_data)
+        // FIX: removed trailing comma after last port connection
     );
 
     // Dispatcher
@@ -167,9 +168,11 @@ module gpu #(
 
             // Pass through signals between LSUs and data memory controller
             genvar j;
-            for (j = 0; j < THREADS_PER_BLOCK; j = j + 1) begin
+            for (j = 0; j < THREADS_PER_BLOCK; j = j + 1) begin : lsu_passthrough
                 localparam lsu_index = i * THREADS_PER_BLOCK + j;
-                always @(posedge clk) begin 
+                // FIX: always block named ': lsu_pass_reg' — Quartus requires named always
+                // blocks inside generate for loops when a localparam is declared in the same scope
+                always @(posedge clk) begin : lsu_pass_reg
                     lsu_read_valid[lsu_index] <= core_lsu_read_valid[j];
                     lsu_read_address[lsu_index] <= core_lsu_read_address[j];
 
@@ -189,7 +192,8 @@ module gpu #(
                 .DATA_MEM_DATA_BITS(DATA_MEM_DATA_BITS),
                 .PROGRAM_MEM_ADDR_BITS(PROGRAM_MEM_ADDR_BITS),
                 .PROGRAM_MEM_DATA_BITS(PROGRAM_MEM_DATA_BITS),
-                .THREADS_PER_BLOCK(THREADS_PER_BLOCK),
+                .THREADS_PER_BLOCK(THREADS_PER_BLOCK)
+                // FIX: removed trailing comma after last parameter override
             ) core_instance (
                 .clk(clk),
                 .reset(core_reset[i]),
